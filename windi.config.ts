@@ -7,6 +7,9 @@ const config = defineConfig({
 			center: true,
 			padding: '1rem',
 		},
+		fontFamily: {
+			sans: ['Rubik', 'sans-serif'],
+		},
 		extend: {
 			colors: {
 				primary: colors.green,
