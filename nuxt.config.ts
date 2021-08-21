@@ -14,6 +14,9 @@ const config: NuxtConfig = {
 			Rubik: [400, 500, 700],
 		},
 	},
+	head: {
+		script: [{ src: 'https://unpkg.com/phosphor-icons' }],
+	},
 	pwa: {
 		manifest: {
 			name: 'USD2ARS',
