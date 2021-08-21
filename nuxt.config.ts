@@ -1,7 +1,7 @@
 import { NuxtConfig } from '@nuxt/types'
 
 const config: NuxtConfig = {
-	buildModules: ['@nuxt/typescript-build', '@nuxtjs/pwa'],
+	buildModules: ['@nuxt/typescript-build', '@nuxtjs/pwa', 'nuxt-windicss'],
 	components: true,
 	pwa: {
 		manifest: {
