@@ -6,8 +6,13 @@ const config: NuxtConfig = {
 		'@nuxtjs/pwa',
 		'nuxt-windicss',
 		'@nuxtjs/google-fonts',
+		'@nuxtjs/color-mode',
 	],
+	colorMode: {
+		classSuffix: '',
+	},
 	components: true,
+	css: ['~/assets/css/main.css'],
 	googleFonts: {
 		display: 'swap',
 		families: {
