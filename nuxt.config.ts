@@ -31,7 +31,7 @@ const config: NuxtConfig = {
 	head: {
 		script: [{ src: 'https://unpkg.com/phosphor-icons' }],
 	},
-	modules: ['@nuxtjs/firebase'],
+	modules: ['@nuxtjs/firebase', '@nuxt/http'],
 	pwa: {
 		manifest: {
 			name: 'USD2ARS',
