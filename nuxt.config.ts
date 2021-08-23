@@ -8,6 +8,20 @@ const config: NuxtConfig = {
 		'@nuxtjs/google-fonts',
 	],
 	components: true,
+	firebase: {
+		config: {
+			apiKey: 'AIzaSyCFsl2PwsWe5-mFs1aVpMuyxdOgSWpxh1A',
+			authDomain: 'usd2ars.firebaseapp.com',
+			projectId: 'usd2ars',
+			storageBucket: 'usd2ars.appspot.com',
+			messagingSenderId: '279287000046',
+			appId: '1:279287000046:web:9a7e885921458456bdfcff',
+			measurementId: 'G-RBFK2167FQ',
+		},
+		services: {
+			analytics: true,
+		},
+	},
 	googleFonts: {
 		display: 'swap',
 		families: {
@@ -17,6 +31,7 @@ const config: NuxtConfig = {
 	head: {
 		script: [{ src: 'https://unpkg.com/phosphor-icons' }],
 	},
+	modules: ['@nuxtjs/firebase'],
 	pwa: {
 		manifest: {
 			name: 'USD2ARS',
