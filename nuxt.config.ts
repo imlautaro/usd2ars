@@ -6,6 +6,8 @@ const config: NuxtConfig = {
 		'@nuxtjs/pwa',
 		'nuxt-windicss',
 		'@nuxtjs/google-fonts',
+		'@nuxtjs/composition-api/module',
+		'vue2-script-setup-transform/nuxt',
 	],
 	components: true,
 	firebase: {
