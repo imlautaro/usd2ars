@@ -27,4 +27,9 @@
 			@apply bg-gray-900/5;
 		}
 	}
+	.dark .icon-btn {
+		&:active {
+			@apply bg-white/5;
+		}
+	}
 }

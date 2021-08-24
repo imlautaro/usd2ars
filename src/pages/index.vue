@@ -38,6 +38,10 @@
 							:name="value.nombre"
 							:value="value.compra"
 						/>
+						<display-conversion
+							v-if="quantity && value.compra"
+							:value="value.compra"
+						/>
 						<hr v-if="index < data.length - 1" />
 					</div>
 				</div>
@@ -50,6 +54,10 @@
 						<display-value
 							class="py-4"
 							:name="value.nombre"
+							:value="value.venta"
+						/>
+						<display-conversion
+							v-if="quantity"
 							:value="value.venta"
 						/>
 						<hr v-if="index < data.length - 1" />
@@ -82,8 +90,10 @@
 <script setup>
 import { ref } from '@nuxtjs/composition-api'
 import useDolarsi from '~/composables/dolarsi'
+import useConverter from '~/composables/converter'
 
 const { data } = useDolarsi()
+const { quantity, convertToUsd } = useConverter()
 
 const showCompra = ref(false)
 </script>
