@@ -1,0 +1,30 @@
+@layer base {
+	html {
+		@apply bg-gradient-to-b from-white select-none to-gray-100;
+	}
+	body {
+		@apply text-gray-900;
+		-webkit-tap-highlight-color: transparent;
+	}
+	button,
+	input,
+	h1,
+	textarea,
+	select,
+	div,
+	a {
+		@apply outline-none !important;
+		&:focus {
+			@apply outline-none !important;
+		}
+	}
+}
+
+@layer components {
+	.icon-btn {
+		@apply duration-[250ms] flex -m-2 p-4 rounded-full;
+		&:active {
+			@apply bg-gray-900/5;
+		}
+	}
+}

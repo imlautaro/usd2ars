@@ -10,6 +10,7 @@ const config: NuxtConfig = {
 		'vue2-script-setup-transform/nuxt',
 	],
 	components: true,
+	css: ['~/assets/css/main.css'],
 	firebase: {
 		config: {
 			apiKey: 'AIzaSyCFsl2PwsWe5-mFs1aVpMuyxdOgSWpxh1A',
@@ -39,6 +40,9 @@ const config: NuxtConfig = {
 			name: 'USD2ARS',
 			short_name: 'USD2ARS',
 		},
+	},
+	server: {
+		host: '0.0.0.0',
 	},
 	srcDir: 'src',
 	ssr: false,
