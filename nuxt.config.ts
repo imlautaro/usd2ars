@@ -26,6 +26,9 @@ const config: NuxtConfig = {
 			short_name: 'USD2ARS',
 		},
 	},
+	router: {
+		trailingSlash: true,
+	},
 	server: {
 		host: '0.0.0.0',
 	},
