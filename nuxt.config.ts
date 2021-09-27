@@ -7,7 +7,6 @@ const config: NuxtConfig = {
 		'nuxt-windicss',
 		'@nuxtjs/google-fonts',
 		'@nuxtjs/composition-api/module',
-		'vue2-script-setup-transform/nuxt',
 	],
 	components: true,
 	css: ['~/assets/css/main.css'],
