@@ -15,12 +15,7 @@
 			"~/*": ["./src/*"],
 			"@/*": ["./src/*"]
 		},
-		"types": [
-			"@types/node",
-			"@nuxt/types",
-			"@nuxtjs/firebase",
-			"@nuxt/http"
-		]
+		"types": ["@types/node", "@nuxt/types", "@nuxt/http"]
 	},
 	"exclude": ["node_modules"]
 }
