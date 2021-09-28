@@ -25,7 +25,7 @@ const config: NuxtConfig = {
 		],
 		script: [{ src: 'https://unpkg.com/phosphor-icons' }],
 	},
-	modules: ['@nuxt/http'],
+	modules: ['@nuxt/http', '@nuxtjs/sitemap'],
 	pwa: {
 		meta: {
 			name: 'Convertir dólar a peso argentino | Oficial, Blue y Turista',
@@ -45,6 +45,10 @@ const config: NuxtConfig = {
 	},
 	server: {
 		host: '0.0.0.0',
+	},
+	sitemap: {
+		hostname: 'https://usd2ars.nuxt.club',
+		trailingSlash: true,
 	},
 	srcDir: 'src',
 	ssr: false,
