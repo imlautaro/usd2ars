@@ -13,7 +13,16 @@
 				}}</span
 			>
 		</div>
-		<button class="icon-btn">
+		<button
+			@click="
+				copyText(
+					convertToUsd
+						? format(quantity / value)
+						: format(quantity * value)
+				)
+			"
+			class="icon-btn"
+		>
 			<i class="ph-copy text-2xl"></i>
 		</button>
 	</div>
